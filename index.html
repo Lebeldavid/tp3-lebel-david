@@ -3,16 +3,124 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>Ma première page web</title>
+	<title>Accueil - BurgerShop</title>
+	<meta name="description" content="Contient les éléments de la page d'accueil de BurgerShop.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/styles.css" />
 </head> 
 
 <body>
-	<!-- Élément <div> qui sert à center le contenu dans la page (container) -->
-	<div class="container">
-		<!-- Vous devez ajouter vos balises sous ce commentaire -->
-	</div>
+	<header>
+		<div class="container flexboxSB">
+			<h1><img src="img/logo.png"alt="logo"></h1>
+			<nav>
+				<ul>
+					<li><a href="menu.html">Menu</a></li>
+					<li><a href="réservation.html">Réservation</a></li>
+					<li><a href="restaurant.html">Restaurant</a></li>
+					<li><a class="btn" href="ma-commande.html">Ma commande</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main>
+		<section class="container">
+			<h2>NOS BURGERS</h2>
+			<div class="flexboxC center">
+				<div class="width25">
+					<img src="img/menu/commodo.png" alt="Commodo">
+					<h3>Le Commodo</h3>
+					<p class="prix">9,99$</p>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="width25">
+					<img src="img/menu/lorem.png" alt="Commodo">
+					<h3>Le Lorem</h3>
+					<p class="prix">12,99$</p>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="width25">
+					<img src="img/menu/dolar-met.png" alt="Commodo">
+					<h3>Le Dolar Met</h3>
+					<p class="prix">8,99$</p>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="width25">
+					<img src="img/menu/fugiat.png" alt="Commodo">
+					<h3>Le Fugiat</h3>
+					<p class="prix">12,99$</p>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="width25">
+					<img class="margin-top" src="img/menu/laboris.png" alt="Commodo">
+					<h3>Le Laboris</h3>
+					<p class="prix">12,99$</p>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="width25">
+					<img class="margin-top" src="img/menu/cubidatat.png" alt="Commodo">
+					<h3>Le Cubidatat</h3>
+					<p class="prix">14,99$</p>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+			</div>
+		</section>
+		<section class="container">
+			<h2>NOS BEIGNES</h2>
+			<div class="flexboxC center">
+				<div class="width25">
+					<img src="img/menu/etiam.png" alt="Commodo">
+					<h3>Le Etiam</h3>
+					<p class="prix">3,99$</p>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="width25">
+					<img src="img/menu/malesuada.png" alt="Commodo">
+					<h3>Le Malesuada</h3>
+					<p class="prix">2,99$</p>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="width25">
+					<img src="img/menu/vestibulum.png" alt="Commodo">
+					<h3>Le Vestibulum</h3>
+					<p class="prix">1,99$</p>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="width25">
+					<img src="img/menu/maximus.png" alt="Commodo">
+					<h3>Le Maximus</h3>
+					<p class="prix">2,99$</p>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+			</div>
+		</section>
+		<section class="section-bg">
+			<div class="container flexboxC">
+				<div class="width50">
+					<h2>LE T-SHIRT BURGER SHOP</h2>
+					<p class="text-margin-right">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, reiciendis id aliquid perspiciatis sed repellendus, explicabo perferendis maxime eum adipisci soluta error porro qui necessitatibus quibusdam ipsam similique quod! Explicabo?	
+					</p>
+					<a class="btn" href="#">Ajouter au panier</a>
+				</div>
+				<div class="width50">
+					<img class="img" src="img/t-shirt.png" alt="T-shirt Burger shop">
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="footer-info">
+			<div class="container">
+				<p style="text-align: left;"></p><strong>Burger Shop</strong> : 3175 Boul. Laviolette, Trois-Rivières, Qc<span style="float: right;"><a href="tel:"418-123-4567>418-123-4567</a></span>
+				</p>
+			</div>
+		</div>
+		<div class="flexboxC">
+			<p>Site réalisé par : <strong>David Lebel</strong>  |  Dans le cadre du cours Techniques d'intégration des interfaces Web - Cégep de Trois-Rivières</p>
+		</div>
+	</footer>
 </body>
 
 </html>

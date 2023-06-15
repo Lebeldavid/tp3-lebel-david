@@ -3,9 +3,102 @@
 body{
 	background-color: aliceblue;
 }
-
+footer{
+font-size: 1.1em;
+}
+footer a{
+	text-decoration: none;
+	background-color:white;
+	color: black;
+	margin: auto;
+	padding: 10px 30px;
+}
+footer a:hover{
+	text-decoration: none;
+	background-color:black;
+	color: white;
+	margin: auto;
+	padding: 10px 30px;
+}
+.footer-info{
+	padding: 1.5% 1.5%;
+	background-color: crimson;
+	font-size: 1.3em;
+}
+h1{
+	max-width: 200px;
+}
+h2{
+	font-size: 2.3em;
+}
+h3{
+	font-size: 1.5em;
+	margin: 1%;
+}
+section{
+	padding-bottom: 5%;
+}
+.section-bg{
+	background-color: grey;
+	padding-top: 6%;
+	padding-bottom: 0%;
+}
+.width25{
+	max-width: 25%;
+}
+.width50{
+	max-width: 50%;
+}
 .container{
 	width: 90%;
 	max-width: 1200px;
 	margin: 0 auto;
+}
+.center{
+	text-align: center;
+}
+.margin-top{
+	margin-top: 50px;
+}
+nav li{
+	display: inline-block;
+}
+nav a{
+	display: inline-block;
+	padding: 0px 25px;
+	font-size: 1.6em;
+	text-decoration: none;
+	color: black;
+}
+nav a:hover{
+	color: crimson;
+}
+.flexboxSB{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.flexboxC{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.btn{
+	display: inline-block;
+	background-color: black;
+	color: white;
+	padding: 10px 15px;
+	text-decoration: none;
+}
+.btn:hover{
+	background-color: crimson;
+	color: aliceblue;
+}
+.prix{
+	font-weight: bold;
+	font-size: 2.3em;
+	margin: 2%;
+}
+.text-margin-right{
+	margin-right: 13%;
 }
