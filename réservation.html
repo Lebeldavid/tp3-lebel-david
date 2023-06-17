@@ -9,10 +9,107 @@
 </head> 
 
 <body>
-	<!-- Élément <div> qui sert à center le contenu dans la page (container) -->
-	<div class="container">
-		<!-- Vous devez ajouter vos balises sous ce commentaire -->
-	</div>
+	<header>
+		<div class="container flexboxSB">
+			<a href="index.html"><img class="img" src="img/logo.png"alt="logo"></a>
+			<nav>
+				<ul>
+					<li><a href="index.html">Menu</a></li>
+					<li><a class="active" href="réservation.html">Réservation</a></li>
+					<li><a href="restaurant.html">Restaurant</a></li>
+					<li><a class="btn" href="ma-commande.html">Ma commande</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+	<main class="container">
+		<h1>COMMANDEZ EN LIGNE!</h1>
+		<form action="confirmation-de-commande.html" method="get" class="flexboxForm">
+			<fieldset>
+				<legend>Responsable de la réservation</legend>
+				<div>
+					<label for="Prenom">Votre prénom :</label>
+					<input class="champs-large" type="text" id="Prenom" name="Prenom" required>
+				</div>
+				<div>
+					<label for="Nom">Votre nom :</label>
+					<input class="champs-large" type="text" id="Nom" name="Nom" required>
+				</div>
+				<div>
+					<label for="telephone">Numéro de téléphone</label>
+					<input class="champs-large" type="tel" id="telephone" name="telephone" required>
+				</div>
+				<legend>Information personnelles (facultatif)</legend>
+				<div>
+					<label for="Courriel">Votre courriel :</label>
+					<input class="champs-large" type="email" id="Courriel" name="Courriel" placeholder="abc@mail.com">
+				</div>
+				<div>
+					<label for="infolettre" >Suivre notre l'infolettre</label><br>
+					<input type="checkbox" name="infolettre" id="infolettre" >
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Détails de la réservation</legend>
+				<div>
+					<label for="nombre=personne">Nombre de personnes</label>
+					<input class="champs-large" min="1" type="number" name="nombre-personne" required>
+				</div>
+				<div>
+					<label for="date">Date</label>
+					<input class="champs-large" type="date" id="date" name="date" required>
+				</div>
+				<div>
+					<label for="selheure">Heure</label>
+					<select class="champs-large" name="selHeure" required>
+						<option value=" 12:00" selected>12:00</option>
+						<option value=" 12:30">12:30</option>
+						<option value=" 13:00">13:00</option>
+						<option value=" 13:30">13:30</option>
+						<option value=" 17:00">17:00</option>
+						<option value=" 17:30">17:30</option>
+						<option value=" 18:00">18:00</option>
+						<option value=" 18:30">18:30</option>
+						<option value=" 19:00">19:00</option>
+						<option value=" 19:30">19:30</option>
+						<option value=" 20:00">20:00</option>
+						<option value=" 20:30">20:30</option>
+						<option value=" 21:00">21:00</option>
+					</select>
+				</div>
+				<fieldset>
+					<legend>Lieu</legend>
+					<div>
+						<label for="salle">Salle</label>
+						<input type="radio" id="salle" name="lieux" value="salle" checked>
+					</div>
+					<div>
+						<label for="terrasse">Terrasse</label>
+						<input type="radio" id="terrasse" name="lieux" value="terrasse">
+					</div>
+				</fieldset>
+				<div>
+					<label for="commentaire">Commentaire facultatif</label>
+					<textarea class="champs-large" id="commentaire" name="commentaire"></textarea>
+				</div>
+			</fieldset>
+			<div>
+				<input class="btn" type="submit" value="Commander">
+			</div>
+		</form>
+	</main>
+	<footer>
+		<div class="footer-info">
+			<div class="container">
+				<p style="text-align: left;"></p><strong>Burger Shop</strong> : 3175 Boul. Laviolette, Trois-Rivières, Qc<span style="float: right;"><a href="tel:"418-123-4567>418-123-4567</a></span>
+				</p>
+			</div>
+		</div>
+		<div class="flexboxC">
+			<p>Site réalisé par : <strong>David Lebel</strong>  |  Dans le cadre du cours Techniques d'intégration des interfaces Web - Cégep de Trois-Rivières</p>
+		</div>
+	</footer>
 </body>
 
 </html>
