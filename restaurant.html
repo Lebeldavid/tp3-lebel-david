@@ -3,9 +3,9 @@
 
 <head>
 	<meta charset="utf-8" />
-	<title>Ma première page web</title>
+	<title>Restaurant - Burgershop</title>
 	<meta name="description" content="Contient les éléments de la page restaurant.">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/styles.css" />
@@ -15,7 +15,7 @@
 	<header>
 		<div class="container flexboxSB">
 			<a href="index.html"><img class="img logo" src="img/logo.png"alt="logo"></a>
-			<nav>
+			<nav class="hide-on-mobile">
 				<ul>
 					<li><a href="index.html">Menu</a></li>
 					<li><a href="réservation.html">Réservation</a></li>
@@ -23,6 +23,7 @@
 					<li><a class="btncmd" href="ma-commande.html">Ma commande</a></li>
 				</ul>
 			</nav>
+			<img class="show-on-mobile menuHam" src="img/menu-mobile.png" alt="Menu">
 		</div>
 	</header>
 	<main class="container">
