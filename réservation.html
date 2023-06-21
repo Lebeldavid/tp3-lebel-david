@@ -4,6 +4,9 @@
 <head>
 	<meta charset="utf-8" />
 	<title>Ma première page web</title>
+	<meta name="description" content="Contient les éléments de la page réservation.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
 	<link rel="stylesheet" href="css/normalize.css" />
 	<link rel="stylesheet" href="css/styles.css" />
 </head> 
@@ -11,35 +14,35 @@
 <body>
 	<header>
 		<div class="container flexboxSB">
-			<a href="index.html"><img class="img" src="img/logo.png"alt="logo"></a>
+			<a href="index.html"><img class="img logo" src="img/logo.png"alt="logo"></a>
 			<nav>
 				<ul>
 					<li><a href="index.html">Menu</a></li>
 					<li><a class="active" href="réservation.html">Réservation</a></li>
 					<li><a href="restaurant.html">Restaurant</a></li>
-					<li><a class="btn" href="ma-commande.html">Ma commande</a></li>
+					<li><a class="btncmd" href="ma-commande.html">Ma commande</a></li>
 				</ul>
 			</nav>
 		</div>
 	</header>
 	<main class="container">
-		<h1>COMMANDEZ EN LIGNE!</h1>
+		<h1 class="margin30">COMMANDEZ EN LIGNE!</h1>
 		<form action="confirmation-de-commande.html" method="get" class="flexboxForm">
 			<fieldset>
-				<legend>Responsable de la réservation</legend>
+				<legend>Personne responsable de la réservation</legend>
 				<div>
-					<label for="Prenom">Votre prénom :</label>
+					<label for="Prenom">Prénom :</label>
 					<input class="champs-large" type="text" id="Prenom" name="Prenom" required>
 				</div>
 				<div>
-					<label for="Nom">Votre nom :</label>
+					<label for="Nom">Nom :</label>
 					<input class="champs-large" type="text" id="Nom" name="Nom" required>
 				</div>
 				<div>
 					<label for="telephone">Numéro de téléphone</label>
-					<input class="champs-large" type="tel" id="telephone" name="telephone" required>
+					<input class="champs-large" type="tel" id="telephone" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
 				</div>
-				<legend>Information personnelles (facultatif)</legend>
+				<legend>Informations personnelles (facultatif)</legend>
 				<div>
 					<label for="Courriel">Votre courriel :</label>
 					<input class="champs-large" type="email" id="Courriel" name="Courriel" placeholder="abc@mail.com">
@@ -90,7 +93,7 @@
 					</div>
 				</fieldset>
 				<div>
-					<label for="commentaire">Commentaire facultatif</label>
+					<label for="commentaire">Commentaire supplémentaire (facultatif)</label>
 					<textarea class="champs-large" id="commentaire" name="commentaire"></textarea>
 				</div>
 			</fieldset>
