@@ -1,6 +1,6 @@
-*{ box-sizing: border-box;}
-
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto:wght@900&display=swap');
+
+*{ box-sizing: border-box;}
 
 body{
 	background-color: ghostwhite;
@@ -37,7 +37,6 @@ footer a:hover{
 	font-size: 1.2em;
 }
 .h1{
-	
 	margin-bottom: 500px;
 }
 h1{
@@ -108,12 +107,22 @@ nav a:hover{
 .active{
 	text-decoration: underline;
 }
+.flexboxNAV{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+}
 .flexboxSB{
 	display: flex;
 	flex-wrap: nowrap;
 	justify-content: space-between;
 }
 .flexboxC{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.flexboxbg{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -293,8 +302,24 @@ fieldset fieldset, legend{
 	display: none !important;
 }
 .menuHam{
+	max-width: 64px;
 	max-height: 64px;
 	margin-top: 80px;
+}
+
+
+
+@media screen and (max-width: 1200px)
+{
+	nav a{
+		width: 100%;
+		display: inline-block;
+		padding: 0px 20px;
+		font-size: 1.4em;
+		font-family: 'Anton', sans-serif;
+		text-decoration: none;
+		color: white;
+	}
 }
 
 
@@ -345,7 +370,61 @@ fieldset fieldset, legend{
 		grid-column: 1 / span 2;
 		grid-row: 5 / span 6;
 	}
+	.flexboxbg{
+		text-align: center;
+		flex-direction: column;
+		align-items: center;
+	}
+	.flexboxbg .btn{
+	margin-bottom: 20px;
+	}
+	footer p{
+		text-align: center;
+		font-size: 0.8em;
+	}
+	.text-margin-right{
+		margin-right: 0%;
+	}
+	.width50{
+		min-width: 80%;
+	}
+	.flexboxForm{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		flex-direction: column;
+	}
+	fieldset{
+		width: 100%;
+	}
+	form, .btn{
+		align-items: center;
+	}
+	.margin-top{
+		margin-top: 25px;
+	}
+	.ul{
+		list-style: none;
+		width: 100%;
+	}
+	.details{
+		width: 100%;
+	}
+	.flexboxSB{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
 }
+
+
+@media screen and (max-width: 690px)
+{
+	.footer-info, p{
+		font-size: 0.9em;
+	}
+}
+
 
 @media screen and (max-width: 570px)
 {
