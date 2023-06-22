@@ -2,19 +2,19 @@
 <html lang="fr">
 
 <head>
-	<meta charset="utf-8" />
+	<meta charset="utf-8">
 	<title>Réservation - Burgershop</title>
 	<meta name="description" content="Contient les éléments de la page réservation.">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<link rel="stylesheet" href="css/normalize.css" />
-	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/styles.css">
 </head> 
 
 <body>
 	<header>
-		<div class="container flexboxSB">
-			<a href="index.html"><img class="img logo" src="img/logo.png"alt="logo"></a>
+		<div class="container flexboxNAV">
+			<a href="index.html"><img class="img logo" src="img/logo.png" alt="logo"></a>
 			<nav class="hide-on-mobile">
 				<ul>
 					<li><a href="index.html">Menu</a></li>
@@ -43,7 +43,7 @@
 					<label for="telephone">Numéro de téléphone</label>
 					<input class="champs-large" type="tel" id="telephone" name="telephone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" required>
 				</div>
-				<legend>Informations personnelles (facultatif)</legend>
+				<p class="margin-top">Informations personnelles (facultatif)</p>
 				<div>
 					<label for="Courriel">Votre courriel :</label>
 					<input class="champs-large" type="email" id="Courriel" name="Courriel" placeholder="abc@mail.com">
@@ -57,16 +57,17 @@
 			<fieldset>
 				<legend>Détails de la réservation</legend>
 				<div>
-					<label for="nombre=personne">Nombre de personnes</label>
-					<input class="champs-large" min="1" type="number" name="nombre-personne" required>
+					<label for="nombre-personne">Nombre de personnes</label>
+					<input class="champs-large" min="1" type="number" id="nombre-personne" name="nombre-personne" required>
 				</div>
 				<div>
 					<label for="date">Date</label>
 					<input class="champs-large" type="date" id="date" name="date" required>
 				</div>
 				<div>
-					<label for="selheure">Heure</label>
-					<select class="champs-large" name="selHeure" required>
+					<label for="selHeure">Heure</label>
+					<select class="champs-large" id="selHeure" name="selHeure" required>
+						<option value="">--Choisir--</option>
 						<option value=" 12:00" selected>12:00</option>
 						<option value=" 12:30">12:30</option>
 						<option value=" 13:00">13:00</option>
@@ -106,7 +107,7 @@
 	<footer>
 		<div class="footer-info">
 			<div class="container">
-				<p style="text-align: left;"></p><strong>Burger Shop</strong> : 3175 Boul. Laviolette, Trois-Rivières, Qc<span style="float: right;"><a href="tel:"418-123-4567>418-123-4567</a></span>
+				<p style="text-align: left;"><strong>Burger Shop</strong> : 3175 Boul. Laviolette, Trois-Rivières, Qc<span style="float: right;"><a href="tel:418-123-4567">418-123-4567</a></span>
 				</p>
 			</div>
 		</div>
